@@ -291,7 +291,11 @@ function googleApiScriptLoaded()
 {
   defineFormListenersOnLoad();
 }
-function setFormInputsValue(address, lat, lng ) {
+/**
+ * setFormInputsValue v0.1 sets values of form input elements
+ * @param address , gps coordinates lat , lng
+ */
+ function setFormInputsValue(address, lat, lng ) {
   if (document.getElementById( formAddressID )) {
     document.getElementById( formAddressID ).value = address;
   }
